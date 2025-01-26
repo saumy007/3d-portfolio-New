@@ -42,9 +42,7 @@ const About = () => {
         varients={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Hi, I'm Tanmay Sontakke, a passionate Full Stack Developer and 3D Design
-        enthusiast. I specialize in crafting dynamic web applications that merge
-        functionality with stunning visuals. With a knack for innovation and
+        Hi, I'm Saumy Sharma, a passionate Software Developer and XR Enthusiast. I specialize in Unity and C# for Building Digital Products and I my major interest include AR VR Development, Game Development, and Software Development. With a keen eye for
         attention to detail, I transform ideas into immersive digital
         experiences. Let's build something extraordinary together!
       </motion.p>

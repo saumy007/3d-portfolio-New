@@ -29,15 +29,15 @@ const Contact = () => {
     emailjs.send('service_mm94c9k', 'template_yv7hh1c',
       {
         from_name: form.name,
-        to_name: 'Tanmay Sontakke',
+        to_name: 'Saumy Sharma',
         from_email: form.email,
-        to_email:'tanmaysontakke99@gmail.com',
+        to_email:'saumysharma007@gmail.com',
         message: form.message,
       },
       '3ut-EeP0DrejWYgGn'
      ).then(()=>{
       setLoading(false);
-      alert('Tank you for your message. I will get back to you soon')
+      alert('Thank you for your message. I will get back to you soon')
       setForm({
         name:'',
         email:'',

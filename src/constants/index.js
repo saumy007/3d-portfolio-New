@@ -1,3 +1,4 @@
+
 import {
     mobile,
     backend,
@@ -15,15 +16,11 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
     threejs,
-    cern,
+    cerns,
     xros,
     iitg,
     smollan,
@@ -122,7 +119,7 @@ import {
     {
       title: "Nvidia Omniverse Developer",
       company_name: "CERN, Geneva Switzerland",
-      icon: cern.png,
+      icon: cerns,
       iconBg: "#383E56",
       date: "July 2024 - September 2024",
       points: [
@@ -135,7 +132,7 @@ import {
     {
       title: "Software Developer",
       company_name: "Smollan India Pvt Ltd, Remote",
-      icon: tesla,
+      icon: smollan,
       iconBg: "#E6DEDD",
       date: "Feb 2024 - April 2024",
       points: [
@@ -148,7 +145,7 @@ import {
     {
       title: "Unity Developer",
       company_name: "XROS by META @ Who VR",
-      icon: shopify,
+      icon: xros,
       iconBg: "#383E56",
       date: "March 2023 - June 2023",
       points: [
@@ -161,7 +158,7 @@ import {
     {
       title: "Unity VR Developer",
       company_name: "IIT Guwahati",
-      icon: meta,
+      icon: iitg,
       iconBg: "#E6DEDD",
       date: "June 2023 - July 2023",
       points: [
