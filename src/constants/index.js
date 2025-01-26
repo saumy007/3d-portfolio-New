@@ -23,6 +23,10 @@ import {
     jobit,
     tripguide,
     threejs,
+    cern,
+    xros,
+    iitg,
+    smollan,
   } from "../assets";
   
   export const navLinks = [
@@ -42,15 +46,15 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Unity XR Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Nvidia Omniverse Developer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Software Developer",
       icon: backend,
     },
     {
@@ -61,19 +65,19 @@ import {
   
   const technologies = [
     {
-      name: "HTML 5",
+      name: "Unity",
       icon: html,
     },
     {
-      name: "CSS 3",
+      name: "C#",
       icon: css,
     },
     {
-      name: "JavaScript",
+      name: "Firebase",
       icon: javascript,
     },
     {
-      name: "TypeScript",
+      name: "3D",
       icon: typescript,
     },
     {
@@ -116,55 +120,55 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Nvidia Omniverse Developer",
+      company_name: "CERN, Geneva Switzerland",
+      icon: cern.png,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "July 2024 - September 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Worked on Nvidia OmniVerse using USD files to create a virtual environment for the LHCb experiment.",
+        "Developed various Extension in Python for Digital Twin of the LHCb experiment.",
+        "Improved Navigation and Mobility in Digital Twin using Cuopts and AI Pathfinding .",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
+      title: "Software Developer",
+      company_name: "Smollan India Pvt Ltd, Remote",
       icon: tesla,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Feb 2024 - April 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Worked on 6+ Google Apps used in Gurugram, India Google Office.",
+        "Integrated Backend with Node js and Firebse Deployed apps on AWS and Google Cloud Platform.",
+        "OPtimized the WebGL and deployed it on server which is used by 10000+ people",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "Unity Developer",
+      company_name: "XROS by META @ Who VR",
       icon: shopify,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "March 2023 - June 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Employed ARFoundation to implement augmented reality features in the application. using Unity ",
+        "Collaborated on the project's User Interface Design using Figma.",
+        "Contributed to improving the application's user experience, making it cleaner and more effective.",
+        "Utilized JSON for cloud integration to enhance data handling and storage.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
+      title: "Unity VR Developer",
+      company_name: "IIT Guwahati",
       icon: meta,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "June 2023 - July 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Made Jewellery Store in Virtual reality.",
+        "Utilized Blender for making 3D models and animations.",
+        "Worked on XR All in one SDK by Meta quest 2 and Unity 3D and reduced the VR Sickness.",
+        "Conducted user research by 20+ people and improved the VR experience.",
       ],
     },
   ];
@@ -172,7 +176,7 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+        "I thought it was impossible to make a website as beautiful as ou ",
       name: "Sara Lee",
       designation: "CFO",
       company: "Acme Co",
@@ -198,20 +202,24 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Beyblade AR",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Multiplayer Beyblade Game made in Unity using C# and PUN(Photon Unity Network) also added functionalty for Augmented Reality to to play with people on same level.",
       tags: [
         {
-          name: "react",
+          name: "Unity",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Csharp",
+          color: "red-text-gradient", 
+        },
+
+        {name: "ARFoundation",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Multiplayer",
           color: "pink-text-gradient",
         },
       ],
@@ -219,16 +227,16 @@ import {
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Predictive Maintenance and Monitoring using Machine Learning",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Built a system to predict equipment failures and optimize maintenance using machine learning models. Analyzed sensor data, achieved 20-30% cost reduction, and deployed the solution on AWS. Tools: Python, Scikit-learn.",
       tags: [
         {
-          name: "react",
+          name: "Unity",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Csharp",
           color: "green-text-gradient",
         },
         {
@@ -240,9 +248,9 @@ import {
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Digital Twin Representation",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A VR based Application that utilizes XR Interaction Toolkit and Shows the future of Digital Twin made in Unity using C# can also be played with VR Headset with VR simulator of Meta All in one SDK .",
       tags: [
         {
           name: "nextjs",
@@ -258,7 +266,7 @@ import {
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/saumy007",
     },
   ];
   
