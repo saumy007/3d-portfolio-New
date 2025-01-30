@@ -1,13 +1,15 @@
-
 import {
+    unity,
+    csharp,
+    python,
     mobile,
     backend,
     creator,
     web,
     javascript,
-    typescript,
-    html,
-    css,
+    beyblade,
+    vr,
+
     reactjs,
     redux,
     tailwind,
@@ -16,15 +18,20 @@ import {
     git,
     figma,
     docker,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
-    cerns,
+
+    alma,
+    crud,
+
+    cern,
     xros,
     iitg,
     smollan,
+    predictive
+
+
   } from "../assets";
+
   
   export const navLinks = [
     {
@@ -43,39 +50,39 @@ import {
   
   const services = [
     {
-      title: "Unity XR Developer",
+      title: "Unity Developer",
       icon: web,
     },
     {
-      title: "Nvidia Omniverse Developer",
+      title: "XR Developer",
       icon: mobile,
     },
     {
-      title: "Software Developer",
+      title: "Application Developer",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Software Developer",
       icon: creator,
     },
   ];
   
   const technologies = [
     {
-      name: "Unity",
-      icon: html,
+      name: "Unity 3D",
+      icon: unity,
     },
     {
-      name: "C#",
-      icon: css,
+      name: "Csharp",
+      icon: csharp,
     },
     {
-      name: "Firebase",
+      name: "JavaScript",
       icon: javascript,
     },
     {
-      name: "3D",
-      icon: typescript,
+      name: "Python",
+      icon: python,
     },
     {
       name: "React JS",
@@ -119,8 +126,8 @@ import {
     {
       title: "Nvidia Omniverse Developer",
       company_name: "CERN, Geneva Switzerland",
-      icon: cerns,
-      iconBg: "#383E56",
+      icon: cern,
+      iconBg: "#1E59AE",
       date: "July 2024 - September 2024",
       points: [
         "Worked on Nvidia OmniVerse using USD files to create a virtual environment for the LHCb experiment.",
@@ -133,7 +140,7 @@ import {
       title: "Software Developer",
       company_name: "Smollan India Pvt Ltd, Remote",
       icon: smollan,
-      iconBg: "#E6DEDD",
+      iconBg: "#11294F",
       date: "Feb 2024 - April 2024",
       points: [
         "Worked on 6+ Google Apps used in Gurugram, India Google Office.",
@@ -146,7 +153,7 @@ import {
       title: "Unity Developer",
       company_name: "XROS by META @ Who VR",
       icon: xros,
-      iconBg: "#383E56",
+      iconBg: "#FFFFFF",
       date: "March 2023 - June 2023",
       points: [
         "Employed ARFoundation to implement augmented reality features in the application. using Unity ",
@@ -159,7 +166,7 @@ import {
       title: "Unity VR Developer",
       company_name: "IIT Guwahati",
       icon: iitg,
-      iconBg: "#E6DEDD",
+      iconBg: "#FFFFFF",
       date: "June 2023 - July 2023",
       points: [
         "Made Jewellery Store in Virtual reality.",
@@ -170,34 +177,29 @@ import {
     },
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as ou ",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
   
   const projects = [
+    {
+      name: "Digital Twin VR",
+      description:
+        "A VR based Application that utilizes XR Interaction Toolkit and Shows the future of Digital Twin made in Unity using C# can also be played with VR Headset with VR simulator of Meta All in one SDK .",
+      tags: [
+        {
+          name: "Unity",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "XR Interaction Toolkit",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Quest",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: vr,
+      source_code_link: "https://github.com/saumy007/VR-Factory",
+    },
     {
       name: "Beyblade AR",
       description:
@@ -208,63 +210,39 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "Csharp",
-          color: "red-text-gradient", 
-        },
-
-        {name: "ARFoundation",
+          name: "ARCore",
           color: "green-text-gradient",
         },
         {
-          name: "Multiplayer",
+          name: "C#",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: beyblade,
+      source_code_link: "",
     },
+    
     {
       name: "Predictive Maintenance and Monitoring using Machine Learning",
       description:
         "Built a system to predict equipment failures and optimize maintenance using machine learning models. Analyzed sensor data, achieved 20-30% cost reduction, and deployed the solution on AWS. Tools: Python, Scikit-learn.",
       tags: [
         {
-          name: "Unity",
+          name: "Python",
           color: "blue-text-gradient",
         },
         {
-          name: "Csharp",
+          name: "Skitlearn",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "numpy",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Digital Twin Representation",
-      description:
-        "A VR based Application that utilizes XR Interaction Toolkit and Shows the future of Digital Twin made in Unity using C# can also be played with VR Headset with VR simulator of Meta All in one SDK .",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/saumy007",
+      image: predictive,
+      source_code_link: "https://github.com/saumy007/Predictive-maintenance-Unity-VR-.git",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };

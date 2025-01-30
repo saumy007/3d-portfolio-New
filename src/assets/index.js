@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import apple from "./apple.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -8,13 +9,9 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 
-import cerns from "./company/cerns.png";
-import xros from "./company/xros.jpeg";
-import iitg from "./company/iitg.png";
-import smollan from "./company/smollan.jpeg";
-
-
-import css from "./tech/css.png";
+import csharp from "./tech/csharp.png";
+import unity from "./tech/unity.png";
+import python from "./tech/python.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
@@ -29,21 +26,46 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 
+import meta from "./company/meta.png";
+import shopify from "./company/shopify.png";
+import starbucks from "./company/starbucks.png";
+import tesla from "./company/tesla.png";
+import cern from "./company/cern.png";
+import iitg from "./company/iitg.png";
+import smollan from "./company/smollan.jpeg";
+import xros from "./company/xros.jpeg";
 
 import carrent from "./carrent.png";
+import beyblade from "./beyblade.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import predictive from "./predictive.png";
+import vr from "./vr.png";
+
+import alma from "./Alma.jpg";
+import crud from "./CRUD.png";
+import ecom from "./EcomTanmay.png";
+
+import ATG from "./company/ATG.jpg"
+import Fam from "./company/icon.svg"
 
 export {
+  alma,
+  crud,
+  ecom,
+  ATG,
+  Fam,
   logo,
   backend,
   creator,
   mobile,
   web,
   github,
+  python,
   menu,
+  unity,
   close,
-  css,
+  csharp,
   docker,
   figma,
   git,
@@ -56,11 +78,20 @@ export {
   tailwind,
   typescript,
   threejs,
+  meta,
+  shopify,
+  starbucks,
+  tesla,
   carrent,
   jobit,
   tripguide,
-  cerns,
+  cern,
+  xros,
   iitg,
   smollan,
-  xros
+  beyblade,
+  predictive,
+  vr,
+  apple
+
 };

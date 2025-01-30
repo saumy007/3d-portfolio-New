@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-import Computers from "./canvas/Computers";
+// import ChairCanvas from "./canvas/Chair";
+import { Gaming_chair } from "./canvas/Gaming_chair";
 
 
 const Hero = () => {
@@ -21,7 +22,8 @@ const Hero = () => {
             <span className="text-[#915eff]">Saumy Sharma</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am in Love with Technology and Creativity and I am a Software Developer and XR Enthusiast.
+            
+            Innovative software engineer blending AR/VR, AI, and game development<br/> to craft immersive experiences.
           </p>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo, menu, close,apple } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -22,12 +22,18 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <img src={apple} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             {" "}
-             <span className="sm:block hidden">Tanmay Sontakke</span>
+            <span className="sm:block hidden">Saumy Sharma</span>
           </p>
         </Link>
+        <a
+          href="mailto:tanmaysontakke99@gmail.com"
+          className={`text-gray-400 text-[18px] font-medium cursor-pointer`}
+        >
+          saumysharma007@gmail.com
+        </a>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li

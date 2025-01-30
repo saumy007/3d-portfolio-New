@@ -42,9 +42,8 @@ const About = () => {
         varients={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Hi, I'm Saumy Sharma, a passionate Software Developer and XR Enthusiast. I specialize in Unity and C# for Building Digital Products and I my major interest include AR VR Development, Game Development, and Software Development. With a keen eye for
-        attention to detail, I transform ideas into immersive digital
-        experiences. Let's build something extraordinary together!
+        Hi, I'm Saumy Sharma, a
+        passionate software engineer with a deep love for AR/VR, AI, and game development, crafting immersive digital experiences. I specialize in building interactive applications, gamified solutions, and futuristic tech innovations. My work blends creativity with technical expertise, focusing on user engagement and storytelling. I push the boundaries of software development.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
