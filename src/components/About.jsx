@@ -46,6 +46,16 @@ const About = () => {
         passionate software engineer with a deep love for AR/VR, AI, and game development, crafting immersive digital experiences. I specialize in building interactive applications, gamified solutions, and futuristic tech innovations. My work blends creativity with technical expertise, focusing on user engagement and storytelling. I push the boundaries of software development.
       </motion.p>
 
+      <motion.a
+        href="https://drive.google.com/file/d/1keBbvYzpu1JOj9Mjzojxx5v_bp6Vf8md/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        variants={fadeIn("", "", 0.3, 1)}
+        className="mt-6 inline-block bg-gradient-to-r from-pink-500 to-blue-500 text-white py-3 px-6 rounded-lg font-semibold hover:shadow-lg transition-shadow duration-300"
+      >
+        Download My Resume
+      </motion.a>
+
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />

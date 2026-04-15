@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import apple from "./apple.png";
+import apple from "./applevr-removebg-preview.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -49,6 +49,13 @@ import ecom from "./EcomTanmay.png";
 import ATG from "./company/ATG.jpg"
 import Fam from "./company/icon.svg"
 
+import nvidia from "./tech/nvidia.jpeg";
+import mujoco from "./mujoco.jpeg";
+import robotOdometry from "./rotot_odometry.jpeg";
+import coursera from "./coursera.jpeg";
+import mathworks from "./mathworks.jpeg";
+import nptel from "./nptel.jpeg";
+
 export {
   alma,
   crud,
@@ -92,6 +99,12 @@ export {
   beyblade,
   predictive,
   vr,
-  apple
+  apple,
+  nvidia,
+  mujoco,
+  robotOdometry,
+  coursera,
+  mathworks,
+  nptel
 
 };

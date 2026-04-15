@@ -19,6 +19,12 @@ import {
     figma,
     docker,
     threejs,
+    nvidia,
+    mujoco,
+    robotOdometry,
+    coursera,
+    mathworks,
+    nptel,
 
     alma,
     crud,
@@ -50,7 +56,7 @@ import {
   
   const services = [
     {
-      title: "Unity Developer",
+      title: "Robotics Simulation and Software Developer",
       icon: web,
     },
     {
@@ -113,8 +119,8 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "Nvidia Omniverse",
+      icon: nvidia,
     },
     {
       name: "docker",
@@ -123,6 +129,21 @@ import {
   ];
   
   const experiences = [
+    {
+      title: "Robotics Software Developer",
+      company_name: "Jio Reality Labs (Reliance Industries), Mumbai",
+      icon: nvidia,
+      iconBg: "#000000",
+      date: "May 2025 - Present",
+      points: [
+        "Simulated complex hand-object interaction scenarios using Isaac Sim and ROS 2, enabling pre-deployment validation of grasping policies with a 30% improvement in simulation-to-reality transfer.",
+        "Designed and tested AI-driven control strategies to enhance robot dexterity, optimizing hand pose estimation and joint coordination across 6+ DoF, improving object manipulation success rate by 45%",
+        "Developed mobility behaviors by integrating sensor-driven locomotion models, enabling stable walking and turning on uneven terrain with a 25% reduction in fall incidents during trials.",
+        "Calibrated and fine-tuned mass, inertia, and joint damping parameters in simulation for 20+ limb segments, ensuring physics-consistent behavior of hands and legs across tasks.",
+        "Worked on Deployment of GrootN1.5 Model on Humanoid Robot Simulation using ISAAC SIM ROS Nodes and achieved 80% accuracy.",
+        "Unity to ROS2 MQTT protocol Deployment for Odometry deployment for Realsense Camera using Meta Quest 3.",
+      ],
+    },
     {
       title: "Nvidia Omniverse Developer",
       company_name: "CERN, Geneva Switzerland",
@@ -179,10 +200,57 @@ import {
   
   
   const projects = [
+    // Robotics Projects
+    {
+      name: "Unity MQTT Odometry Package",
+      description:
+        "A comprehensive robotics package enabling Unity to ROS2 MQTT protocol deployment for odometry data collection from Realsense cameras. Integrated with Meta Quest 3 for real-time sensor data streaming and robot control.",
+      category: "Robotics",
+      tags: [
+        {
+          name: "Unity",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "ROS2",
+          color: "green-text-gradient",
+        },
+        {
+          name: "MQTT",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: robotOdometry,
+      source_code_link: "https://github.com/saumy007/Unity-MQTT-Odometry-Package.git",
+    },
+    {
+      name: "Reinforcement Learning Robot Policies",
+      description:
+        "Training data and logs from a humanoid robot simulated in MoJoCo, focusing on learning a stable standing posture. The training process optimizes the robot's gait control system to maintain balance and remain stationary under simulation dynamics.",
+      category: "Robotics",
+      tags: [
+        {
+          name: "Python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "MuJoCo",
+          color: "green-text-gradient",
+        },
+        {
+          name: "RL",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: mujoco,
+      source_code_link: "https://github.com/saumy007/Robotics_RL.git",
+    },
+    // AR VR Projects
     {
       name: "Digital Twin VR",
       description:
         "A VR based Application that utilizes XR Interaction Toolkit and Shows the future of Digital Twin made in Unity using C# can also be played with VR Headset with VR simulator of Meta All in one SDK .",
+      category: "AR VR",
       tags: [
         {
           name: "Unity",
@@ -204,6 +272,7 @@ import {
       name: "Beyblade AR",
       description:
         "Multiplayer Beyblade Game made in Unity using C# and PUN(Photon Unity Network) also added functionalty for Augmented Reality to to play with people on same level.",
+      category: "AR VR",
       tags: [
         {
           name: "Unity",
@@ -221,18 +290,19 @@ import {
       image: beyblade,
       source_code_link: "",
     },
-    
+    // ML AI LLM Projects
     {
       name: "Predictive Maintenance and Monitoring using Machine Learning",
       description:
         "Built a system to predict equipment failures and optimize maintenance using machine learning models. Analyzed sensor data, achieved 20-30% cost reduction, and deployed the solution on AWS. Tools: Python, Scikit-learn.",
+      category: "ML AI LLM",
       tags: [
         {
           name: "Python",
           color: "blue-text-gradient",
         },
         {
-          name: "Skitlearn",
+          name: "Scikit-learn",
           color: "green-text-gradient",
         },
         {
@@ -244,5 +314,32 @@ import {
       source_code_link: "https://github.com/saumy007/Predictive-maintenance-Unity-VR-.git",
     },
   ];
-  
-  export { services, technologies, experiences, projects };
+
+  const certifications = [
+    {
+      title: "Supervised Machine Learning: Regression and Classification",
+      issuer: "DeepLearning.AI",
+      date: "2024",
+      credentialUrl: "https://www.coursera.org/account/accomplishments/verify/NVLLVTF9O0Y4",
+      skills: ["Machine Learning", "Python", "Regression", "Classification"],
+      logo: coursera
+    },
+    {
+      title: "Reinforcement Learning",
+      issuer: "Mathworks",
+      date: "2024",
+      credentialUrl: "https://www.coursera.org/account/accomplishments/verify/UVDXRLWTUXF6",
+      skills: ["Reinforcement Learning", "RL Algorithms", "Control Systems", "Optimization"],
+      logo: mathworks
+    },
+    {
+      title: "Industrial Robotics: Theories of Implementation",
+      issuer: "NPTEL",
+      date: "2025",
+      credentialUrl: "https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/112/noc25-me161/Course/NPTEL25ME161S126520042810830747.pdf",
+      skills: ["Industrial Robotics", "Robotic Systems", "Implementation", "Theory"],
+      logo: nptel
+    },
+  ];
+
+  export { services, technologies, experiences, projects, certifications };

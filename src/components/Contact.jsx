@@ -99,27 +99,42 @@ const Contact = () => {
             >
             </textarea>
           </label>
-          <label className="flex flex-col">
-            <div
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none"
-            >
-              <a href="https://docs.google.com/document/d/1q-UwCl56I8MD-xU4ldN5Xh0Sq67X0Nizv5lX_apODOI/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
-            </div>
-          </label>
-          <label className="flex flex-col">
-            <div
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none"
-            >
-              <a href="https://www.linkedin.com/in/saumy-sharma/
-" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </div>
-          </label>
           <button type="submit"
             className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
           >
             {loading ? 'Loading...' : 'Send'}
           </button>
         </form>
+
+        <div className="mt-12">
+          <p className={styles.sectionHeadText}>Connect With Me</p>
+          <div className="mt-6 flex flex-wrap gap-4">
+            <a
+              href="https://drive.google.com/file/d/1keBbvYzpu1JOj9Mjzojxx5v_bp6Vf8md/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-pink-500 to-blue-500 py-3 px-6 rounded-lg text-white font-semibold hover:shadow-lg transition-shadow duration-300"
+            >
+              Resume
+            </a>
+            <a
+              href="https://github.com/saumy007?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-pink-500 to-blue-500 py-3 px-6 rounded-lg text-white font-semibold hover:shadow-lg transition-shadow duration-300"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/saumy-sharma/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-pink-500 to-blue-500 py-3 px-6 rounded-lg text-white font-semibold hover:shadow-lg transition-shadow duration-300"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
       </motion.div>
       
       <motion.div 
