@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Saumy Sharma</title>
+  <script>
+    // GitHub Pages SPA redirect workaround:
+    // store the full path in sessionStorage and redirect to the root
+    var path = window.location.pathname;
+    var base = '/3d-portfolio-New';
+    // strip the base prefix so only the app-level path remains
+    var appPath = path.startsWith(base) ? path.slice(base.length) || '/' : path;
+    sessionStorage.setItem('spa_redirect', appPath + window.location.search + window.location.hash);
+    window.location.replace(base + '/');
+  </script>
+</head>
+<body></body>
+</html>
