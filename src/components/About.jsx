@@ -42,8 +42,11 @@ const About = () => {
         varients={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Hi, I'm Saumy Sharma, a
-        passionate software engineer with a deep love for AR/VR, AI, and game development, crafting immersive digital experiences. I specialize in building interactive applications, gamified solutions, and futuristic tech innovations. My work blends creativity with technical expertise, focusing on user engagement and storytelling. I push the boundaries of software development.
+        I'm Saumy Sharma, a software engineer driven by a passion for physical AI, AR/VR, and simulation technologies. I create immersive, interactive applications that blend technical precision with creative storytelling, always with a strong focus on user engagement.
+        <br /><br />
+        My work is rooted in curiosity and continuous learning — exploring new ways to push the boundaries of what's possible in modern software development. Coming from a diverse background, I bring a broad perspective to problem-solving and innovation.
+        <br /><br />
+        I'm particularly motivated to collaborate with teams that are not only advancing technology but also building solutions that make a meaningful impact on society.
       </motion.p>
 
       <motion.a

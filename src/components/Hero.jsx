@@ -23,7 +23,7 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             
-            Innovative software engineer blending AR/VR, AI, and game development<br/> to craft immersive experiences.
+            Innovative and goal oriented software having diverse experience with AI XR Robotics tech
           </p>
         </div>
       </div>
