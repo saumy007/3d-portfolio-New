@@ -4,13 +4,13 @@ import {
   reactjs, redux, tailwind, nodejs, mongodb, git, figma,
   docker, threejs, nvidia, mujoco, robotOdometry,
   coursera, mathworks, nptel,
-  alma, crud,
   cern, xros, iitg, smollan, predictive,
-  digitalTwin, robotOdom, vrOdom,
-  certificate, cernWork, cernHackathon, cernEvent,
-  vendingMachine, xrosFellow, dodIit, saumyIit,
-  dynamicPainter, phygtlImg,
+  dynamicPainter, cernEvent,
 } from "../assets";
+
+// Helper functions for Google Drive URLs
+const gImg = (id) => `https://lh3.googleusercontent.com/d/${id}`;
+const gVid = (id) => `https://drive.google.com/file/d/${id}/preview`;
 
 export const navLinks = [
   { id: "about",   title: "About"   },
@@ -43,6 +43,7 @@ const technologies = [
 ];
 
 const experiences = [
+  // ── Jio Reality Labs ──────────────────────────────────────────────
   {
     title: "Robotics Software Developer",
     company_name: "Jio Reality Labs (Reliance Industries), Mumbai",
@@ -58,16 +59,30 @@ const experiences = [
       "Unity to ROS2 MQTT protocol Deployment for Odometry deployment for Realsense Camera using Meta Quest 3.",
     ],
     media: [
-      { type: "image", src: digitalTwin, caption: "Digital Twin made using Nvidia Omniverse" },
-      { type: "image", src: robotOdom,   caption: "Robot walking using odometry from VR glasses" },
-      { type: "image", src: vrOdom,      caption: "VR headset odometry via MQTT protocol" },
+      { type: "image", src: gImg("1DIxJugkRHSZwlpOQZsnQ5_VDKi9yOIB8"), caption: "Digital Twin — Nvidia Omniverse" },
+      { type: "image", src: gImg("1XYVqcBbmApEDrP8I-Qr8MEg2cQxd5M29"), caption: "Robot Odometry from VR Glasses"  },
+      { type: "image", src: gImg("1OBcciAGxEt34xajbI0G-50fYZiM_h7KH"), caption: "VR Headset MQTT Odometry Demo"    },
     ],
     viewVideos: [
-      { image: digitalTwin, description: "Digital Twin made using Nvidia Omniverse" },
-      { image: robotOdom,   description: "Robot walking using odometry from the VR glasses" },
-      { image: vrOdom,      description: "VR headset odometry sent through MQTT protocol demo app inside VR" },
+      {
+        image:      gImg("1DIxJugkRHSZwlpOQZsnQ5_VDKi9yOIB8"),
+        videoEmbed: gVid("1EL_UK4WYBvfu9FfvR0uVUZVnqs_x0Dfe"),
+        description: "Digital Twin made using Nvidia Omniverse",
+      },
+      {
+        image:      gImg("1XYVqcBbmApEDrP8I-Qr8MEg2cQxd5M29"),
+        videoEmbed: gVid("1_yjFpNEEuaTtxf-x8yUYqGzNTPRuUsvt"),
+        description: "Robot walking using odometry from the VR glasses",
+      },
+      {
+        image:      gImg("1OBcciAGxEt34xajbI0G-50fYZiM_h7KH"),
+        videoEmbed: gVid("1a8Kv2oDXYu3nqaSg0Y9QVifi9ajpJG7E"),
+        description: "VR headset odometry sent through MQTT protocol demo app inside VR",
+      },
     ],
   },
+
+  // ── CERN Omniverse ────────────────────────────────────────────────
   {
     title: "Nvidia Omniverse Developer",
     company_name: "CERN, Geneva Switzerland",
@@ -81,14 +96,16 @@ const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
     media: [
-      { type: "image", src: certificate, caption: "CERN Internship Certificate" },
-      { type: "image", src: digitalTwin, caption: "LHCb Digital Twin in Omniverse" },
-      { type: "image", src: cernWork,    caption: "CERN Digital Twin Work" },
+      { type: "image", src: gImg("1am0K3zgvPu-39b8YAL-c021Y8Ky7g7LV"), caption: "CERN Internship Certificate"        },
+      { type: "image", src: gImg("1nIc6lWw6GH3K5HLCZYMxtMMGLGRFQWv-"), caption: "LHCb Digital Twin in Omniverse"   },
+      { type: "image", src: gImg("1yLVBeBbiZ5-AXekg0NzRo76eY7Q7CC38"), caption: "CERN Digital Twin Work"            },
     ],
     reportUrl: "https://drive.google.com/file/d/1JkfKWD4E8bgVhedftczw9-gLj_Jn-TtI/view?usp=sharing",
   },
+
+  // ── CERN WebFest Hackathon ────────────────────────────────────────
   {
-    title: "WebFest Hackathon Participant",
+    title: "WebFest Hackathon'24 Participant",
     company_name: "CERN WebFest, Geneva Switzerland",
     icon: cern,
     iconBg: "#1E59AE",
@@ -97,13 +114,16 @@ const experiences = [
       "Participated in CERN WebFest 2024 — one of the world's most prestigious science hackathons.",
       "Worked on the problem: Bringing Quantum Optics to classrooms with LEGO and Augmented Reality.",
       "Built an AR app using LEGO to visualise photon behaviour, beam splitters, and quantum interference patterns.",
-      "Designed interactive experiences to make quantum optics concepts accessible to school students.",
+      "Designed interactive experiences to make quantum optics accessible to school students worldwide.",
     ],
     media: [
-      { type: "image", src: cernHackathon, caption: "CERN WebFest 2024 Hackathon" },
-      { type: "image", src: cernEvent,     caption: "CERN WebFest — Team at the event" },
+      { type: "image", src: gImg("1R5WK3Jyj4NrmWlK7kX29nCJFwQO-TEKd"), caption: "CERN WebFest 2024"              },
+      { type: "image", src: cernEvent,                                    caption: "Team at the event"             },
+      { type: "image", src: gImg("1gQ5O7OOM3VxOt0T7lP-StXtrJ_4lfQ3u"), caption: "CERN WebFest Hackathon"        },
     ],
   },
+
+  // ── Smollan ───────────────────────────────────────────────────────
   {
     title: "Software Developer",
     company_name: "Smollan India Pvt Ltd, Remote",
@@ -117,9 +137,15 @@ const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
     media: [
-      { type: "image", src: vendingMachine, caption: "Vending Machine App — Smollan India" },
+      {
+        type:    "image",
+        src:     gImg("1C3j8OyxTQS-JKI6KprFXaqS8tVmHKwzT"),
+        caption: "Google Vending Machine App — 10k+ Users",
+      },
     ],
   },
+
+  // ── XROS ─────────────────────────────────────────────────────────
   {
     title: "Unity Developer",
     company_name: "XROS by META @ Who VR",
@@ -133,10 +159,12 @@ const experiences = [
       "Utilized JSON for cloud integration to enhance data handling and storage.",
     ],
     media: [
-      { type: "image", src: xrosFellow, caption: "XROS Fellow — META XR Program" },
+      { type: "image", src: gImg("1jicBb7YjodMHB_dRwwivrMdEZRnt6yfx"), caption: "XROS Fellow — META XR Program" },
     ],
     reportUrl: "https://drive.google.com/file/d/1yKtfTK7QkcFu1-yZd_LtzYhffJgJaUi0/view?usp=sharing",
   },
+
+  // ── IIT Guwahati ──────────────────────────────────────────────────
   {
     title: "Unity VR Developer",
     company_name: "IIT Guwahati",
@@ -150,13 +178,14 @@ const experiences = [
       "Conducted user research with 20+ participants and improved the VR experience.",
     ],
     media: [
-      { type: "image", src: dodIit,   caption: "IIT Guwahati VR Project" },
-      { type: "image", src: saumyIit, caption: "Working at IIT Guwahati" },
+      { type: "image", src: gImg("1q5BF5kYVi2_9q1TEgc4o32xO70sjmUks"), caption: "IIT Guwahati VR Project"       },
+      { type: "image", src: gImg("1136xPiZELL7EXZpJJrCjm05-30yPmUT8"), caption: "Working at IIT Guwahati"       },
       { type: "video", src: "https://www.youtube.com/embed/f0Ut_mfXnU0", caption: "VR Jewellery Store — YouTube Short" },
     ],
   },
 ];
 
+// ── Projects ─────────────────────────────────────────────────────────
 const projects = [
   {
     name: "Dynamic Painter in Isaac Sim",
@@ -170,7 +199,7 @@ const projects = [
     ],
     image: dynamicPainter,
     source_code_link: "https://github.com/saumy007/Dynamic-Spray-Painter-Simulation-",
-    video_embed: "https://drive.google.com/file/d/1KppO4IAj6mrx4yamraWQRK5VSZWmkhHn/preview",
+    video_embed: gVid("1KppO4IAj6mrx4yamraWQRK5VSZWmkhHn"),
   },
   {
     name: "Phygtl",
@@ -182,14 +211,14 @@ const projects = [
       { name: "C#",    color: "green-text-gradient" },
       { name: "XR",    color: "pink-text-gradient"  },
     ],
-    image: phygtlImg,
+    image: gImg("1Z7jfxpVmuW0kmGdWvlKRo6CLB7YeaADF"),
     source_code_link: "",
-    video_embed: "https://drive.google.com/file/d/1oxoOZ9sEeEaJ_pQ97ql1vvX2sikjaIIm/preview",
+    video_embed: gVid("1oxoOZ9sEeEaJ_pQ97ql1vvX2sikjaIIm"),
   },
   {
     name: "Unity MQTT Odometry Package",
     description:
-      "A comprehensive robotics package enabling Unity to ROS2 MQTT protocol deployment for odometry data collection from Realsense cameras. Integrated with Meta Quest 3 for real-time sensor data streaming and robot control.",
+      "A comprehensive robotics package enabling Unity to ROS2 MQTT protocol deployment for odometry data collection from Realsense cameras. Integrated with Meta Quest 3 for real-time sensor data streaming.",
     category: "Robotics",
     tags: [
       { name: "Unity", color: "blue-text-gradient"  },
@@ -357,14 +386,14 @@ export const hobbiesData = {
   ],
   interests: [
     { icon: "🤖", title: "Robotics", description: "Humanoid robots, motion planning & simulation" },
-    { icon: "🥽", title: "AR / VR",  description: "Spatial computing & immersive experiences" },
-    { icon: "🎮", title: "Gaming",   description: "Competitive FPS & indie game development" },
-    { icon: "🏋️", title: "Fitness", description: "Gym, boxing & staying disciplined" },
-    { icon: "📖", title: "Reading",  description: "Sci-fi novels, research papers & tech blogs" },
-    { icon: "🎵", title: "Music",    description: "Lo-fi while coding, synthwave on weekends" },
+    { icon: "🥽", title: "AR / VR",  description: "Spatial computing & immersive experiences"     },
+    { icon: "🎮", title: "Gaming",   description: "Competitive FPS & indie game development"       },
+    { icon: "🏋️", title: "Fitness", description: "Gym, boxing & staying disciplined"              },
+    { icon: "📖", title: "Reading",  description: "Sci-fi novels, research papers & tech blogs"    },
+    { icon: "🎵", title: "Music",    description: "Lo-fi while coding, synthwave on weekends"      },
   ],
   aboutMe:
-    "I'm Saumy Sharma — a software engineer who loves making things move, whether that's a robot arm, an AR overlay, or a game character. I get excited about the intersection of simulation, AI, and immersive tech. Always open to a good conversation about robots, games, or the next big idea.",
+    "I'm Saumy Sharma — a software engineer who loves making things move, whether that's a robot arm, an AR overlay, or a game character. I get excited about the intersection of simulation, AI, and immersive tech.",
 };
 
 export { services, technologies, experiences, projects, certifications };

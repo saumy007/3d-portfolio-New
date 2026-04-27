@@ -1,47 +1,103 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-import { styles } from "../styles";
+import { styles }      from "../styles";
 import { experiences } from "../constants/index";
 import { SectionWrapper } from "../hoc";
 import { textVariant, fadeIn } from "../utils/motion";
 import MediaGallery from "./reusable/MediaGallery";
 
-/* ── Image popup modal (View Videos button) ─────────────────────────── */
-const ImagePopup = ({ items, onClose }) => (
-  <div
-    className="fixed inset-0 z-50 flex items-center justify-center p-4"
-    style={{ background: "rgba(0,0,0,0.88)" }}
-    onClick={onClose}
-  >
+/* ── Work-highlights modal (image gallery → inline video player) ────── */
+const WorkHighlightsModal = ({ items, onClose }) => {
+  const [activeVideo, setActiveVideo] = useState(null);
+
+  return (
     <div
-      className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto card-scroll
-                  bg-[#0d0b1e] border border-purple-500/30 rounded-2xl p-6"
-      onClick={(e) => e.stopPropagation()}
+      className="fixed inset-0 z-50 flex items-center justify-center p-4"
+      style={{ background: "rgba(0,0,0,0.9)" }}
+      onClick={onClose}
     >
-      <div className="flex items-center justify-between mb-6">
-        <h3 className="text-white font-bold text-[18px]">Work Highlights</h3>
-        <button
-          onClick={onClose}
-          className="w-8 h-8 rounded-full bg-white/5 hover:bg-white/15 text-secondary
-                     hover:text-white flex items-center justify-center transition-all"
-        >
-          ✕
-        </button>
-      </div>
-      <div className="space-y-6">
-        {items.map((item, i) => (
-          <div key={i} className="rounded-xl overflow-hidden border border-white/5">
-            <img src={item.image} alt={item.description} className="w-full h-52 object-cover" />
-            <p className="px-4 py-3 text-white/80 text-[14px] leading-snug bg-white/[0.03]">
-              {item.description}
-            </p>
+      <div
+        className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto card-scroll
+                    bg-[#0d0b1e] border border-purple-500/30 rounded-2xl"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* header */}
+        <div className="flex items-center justify-between px-6 py-4 border-b border-white/5">
+          <h3 className="text-white font-bold text-[18px]">
+            {activeVideo ? "Video Player" : "Work Highlights"}
+          </h3>
+          <div className="flex items-center gap-2">
+            {activeVideo && (
+              <button
+                onClick={() => setActiveVideo(null)}
+                className="text-[12px] text-secondary hover:text-white bg-white/5
+                           hover:bg-white/10 px-3 py-1.5 rounded-full transition-all"
+              >
+                ← Gallery
+              </button>
+            )}
+            <button
+              onClick={onClose}
+              className="w-8 h-8 rounded-full bg-white/5 hover:bg-white/15 text-secondary
+                         hover:text-white flex items-center justify-center transition-all"
+            >
+              ✕
+            </button>
           </div>
-        ))}
+        </div>
+
+        <div className="p-6">
+          {/* ── video player ── */}
+          {activeVideo ? (
+            <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: "56.25%" }}>
+              <iframe
+                src={activeVideo}
+                className="absolute inset-0 w-full h-full"
+                allow="autoplay; fullscreen"
+                allowFullScreen
+                title="Work video"
+              />
+            </div>
+          ) : (
+            /* ── image gallery ── */
+            <div className="space-y-5">
+              {items.map((item, i) => (
+                <div key={i} className="rounded-xl overflow-hidden border border-white/5">
+                  {/* thumbnail + play overlay */}
+                  <div className="relative">
+                    <img
+                      src={item.image}
+                      alt={item.description}
+                      className="w-full h-52 object-cover"
+                      loading="lazy"
+                    />
+                    {item.videoEmbed && (
+                      <button
+                        onClick={() => setActiveVideo(item.videoEmbed)}
+                        className="absolute inset-0 flex items-center justify-center
+                                   bg-black/30 hover:bg-black/50 transition-all group"
+                        aria-label="Play video"
+                      >
+                        <div className="w-14 h-14 rounded-full bg-white/20 group-hover:bg-purple-600/70
+                                        flex items-center justify-center transition-all duration-200 shadow-lg">
+                          <span className="text-white text-2xl ml-1">▶</span>
+                        </div>
+                      </button>
+                    )}
+                  </div>
+                  <p className="px-4 py-3 text-white/80 text-[14px] leading-snug bg-white/[0.03]">
+                    {item.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 /* ── Single flip card ────────────────────────────────────────────────── */
 const ExperienceFlipCard = ({ experience, index }) => {
@@ -56,7 +112,10 @@ const ExperienceFlipCard = ({ experience, index }) => {
   return (
     <>
       {showPopup && (
-        <ImagePopup items={experience.viewVideos} onClose={() => setShowPopup(false)} />
+        <WorkHighlightsModal
+          items={experience.viewVideos}
+          onClose={() => setShowPopup(false)}
+        />
       )}
 
       <motion.div
@@ -75,6 +134,7 @@ const ExperienceFlipCard = ({ experience, index }) => {
               border: "1px solid rgba(128,78,238,0.18)",
             }}
           >
+            {/* icon + date */}
             <div className="flex items-start justify-between px-6 pt-6">
               <div
                 className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg flex-shrink-0"
@@ -88,11 +148,13 @@ const ExperienceFlipCard = ({ experience, index }) => {
               </span>
             </div>
 
+            {/* titles */}
             <div className="px-6 mt-4">
               <h3 className="text-white font-bold text-[19px] leading-snug">{experience.title}</h3>
               <p className="text-purple-300 text-[13px] font-semibold mt-1">{experience.company_name}</p>
             </div>
 
+            {/* bullet points */}
             <ul className="px-6 mt-4 space-y-2 card-scroll overflow-y-auto" style={{ maxHeight: 195 }}>
               {frontPoints.map((pt, i) => (
                 <li key={i} className="flex gap-2 text-[13px] text-white/80 leading-snug">
@@ -107,6 +169,7 @@ const ExperienceFlipCard = ({ experience, index }) => {
               )}
             </ul>
 
+            {/* CTA buttons */}
             <div className="absolute bottom-5 left-0 right-0 flex justify-center gap-3 flex-wrap px-4">
               {hasPopup && (
                 <span
@@ -134,6 +197,7 @@ const ExperienceFlipCard = ({ experience, index }) => {
               border: "1px solid rgba(99,102,241,0.3)",
             }}
           >
+            {/* back header */}
             <div className="flex items-center justify-between px-5 pt-5 pb-3 flex-shrink-0 border-b border-white/5">
               <div>
                 <p className="text-purple-300 text-[12px] font-semibold uppercase tracking-wider">
@@ -158,22 +222,26 @@ const ExperienceFlipCard = ({ experience, index }) => {
                 <button
                   onClick={(e) => { e.stopPropagation(); setFlipped(false); }}
                   className="flex items-center gap-1.5 text-[12px] text-secondary hover:text-white
-                             bg-white/5 hover:bg-white/10 px-3 py-1.5 rounded-full transition-all duration-200"
+                             bg-white/5 hover:bg-white/10 px-3 py-1.5 rounded-full transition-all"
                 >
                   <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                          d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                   </svg>
                   Back
                 </button>
               </div>
             </div>
 
+            {/* media gallery */}
             <div className="flex-1 px-4 pt-3 pb-2 min-h-0">
               <MediaGallery media={experience.media} title="Work Highlights" />
             </div>
 
+            {/* extra bullet points */}
             {extraPoints.length > 0 && (
-              <ul className="px-5 pb-4 space-y-1 card-scroll overflow-y-auto flex-shrink-0" style={{ maxHeight: 80 }}>
+              <ul className="px-5 pb-4 space-y-1 card-scroll overflow-y-auto flex-shrink-0"
+                  style={{ maxHeight: 80 }}>
                 {extraPoints.map((pt, i) => (
                   <li key={i} className="flex gap-2 text-[12px] text-white/70 leading-snug">
                     <span className="text-indigo-400 flex-shrink-0 mt-0.5">▸</span>
