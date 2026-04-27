@@ -47,8 +47,8 @@ const experiences = [
   {
     title: "Robotics Software Developer",
     company_name: "Jio Reality Labs (Reliance Industries), Mumbai",
-    icon: nvidia,
-    iconBg: "#000000",
+    icon: "https://imgs.search.brave.com/f7wrVBahPMeIy4Kkuo2cTmRCA-E9H1UH03HFtc6j-lU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIxLzA3/L0ppby1Mb2dvLTUw/MHgzMTQucG5n",
+    iconBg: "#FFFFFF",
     date: "May 2025 - Present",
     points: [
       "Simulated complex hand-object interaction scenarios using Isaac Sim and ROS 2, enabling pre-deployment validation of grasping policies with a 30% improvement in simulation-to-reality transfer.",
