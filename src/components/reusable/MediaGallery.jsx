@@ -69,7 +69,12 @@ const MediaGallery = ({ media = [], title }) => {
               <img
                 src={item.src}
                 alt={item.caption || `Media ${current + 1}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full"
+                style={{
+                  objectFit: item.objectFit || "cover",
+                  border: item.border ? `2px solid ${item.border}` : undefined,
+                  boxSizing: "border-box",
+                }}
                 loading="lazy"
               />
             )}
