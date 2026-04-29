@@ -1,28 +1,52 @@
-import { BrowserRouter } from "react-router-dom"
-import { About, Contact, Experience, Hero, Navbar, Tech, Works, Certifications, StarsCanvas} from "./components";
+import { Routes, Route } from "react-router-dom";
+import {
+  About,
+  Contact,
+  Experience,
+  Hero,
+  Navbar,
+  Tech,
+  Works,
+  Certifications,
+  StarsCanvas,
+  ArticlesAndPosts,
+  Hobbies,
+} from "./components";
 
+/* ── Main one-page portfolio ──────────────────────────────────────── */
+const MainPage = () => (
+  <div className="relative z-0 bg-primary">
+    <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+      <Navbar />
+      <Hero />
+    </div>
+    <About />
+    <Experience />
+    <Tech />
+    <Works />
+    <Certifications />
+    <ArticlesAndPosts />
+    <div className="relative z-0">
+      <Contact />
+      <StarsCanvas />
+    </div>
+  </div>
+);
 
-const App = () => {
+/* ── Hobbies standalone page ─────────────────────────────────────── */
+const HobbiesPage = () => (
+  <div className="relative z-0 bg-primary">
+    <Navbar />
+    <Hobbies />
+  </div>
+);
 
-  return (
-    <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
-        </div>
-        <About/>
-        <Experience/>
-        <Tech/>
-        <Works/>
-        <Certifications/>
-        <div className="relative z-0">
-          <Contact/>
-          <StarsCanvas/>
-        </div>
-      </div>
-    </BrowserRouter>
-  )
-}
+/* ── App root ────────────────────────────────────────────────────── */
+const App = () => (
+  <Routes>
+    <Route path="/"        element={<MainPage />}   />
+    <Route path="/hobbies" element={<HobbiesPage />} />
+  </Routes>
+);
 
-export default App
+export default App;
