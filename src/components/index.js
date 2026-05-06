@@ -9,6 +9,7 @@ import Contact          from './Contact';
 import Certifications   from './Certifications';
 import ArticlesAndPosts from './ArticlesAndPosts';
 import Hobbies          from './Hobbies';
+import Achievements     from './Achievements';
 
 export {
   Hero,
@@ -21,6 +22,7 @@ export {
   Certifications,
   ArticlesAndPosts,
   Hobbies,
+  Achievements,
   EarthCanvas,
   BallCanvas,
   ComputersCanvas,

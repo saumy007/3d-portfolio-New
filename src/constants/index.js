@@ -13,10 +13,11 @@ const gImg = (id) => `https://lh3.googleusercontent.com/d/${id}`;
 const gVid = (id) => `https://drive.google.com/file/d/${id}/preview`;
 
 export const navLinks = [
-  { id: "about",   title: "About"   },
-  { id: "work",    title: "Work"    },
-  { id: "contact", title: "Contact" },
-  { id: "hobbies", title: "Hobbies", isRoute: true, path: "/hobbies" },
+  { id: "about",        title: "About"        },
+  { id: "work",         title: "Work"         },
+  { id: "achievements", title: "Achievements" },
+  { id: "contact",      title: "Contact"      },
+  { id: "hobbies",      title: "Hobbies", isRoute: true, path: "/hobbies" },
 ];
 
 const services = [
@@ -54,10 +55,12 @@ const experiences = [
       "Worked on Simulation of Humanoid, domain randomization, real world accurate digital twin creation, teleoperation pipeline for controlling humanoid for AI training purposes.",
       "Designed and tested AI-driven control strategies to enhance robot dexterity, optimizing hand pose estimation and joint coordination across 6+ DoF, improving object manipulation success rate by 45%.",
       "Designed various extensions for data collection using simulations, automated Nav2 bipedal walking pipeline for data collection using ros2 stack.",
+      "Added Lidar in the Humanoid simulation for better world understanding using Isaac Sim.",
     ],
     media: [
       { type: "image", src: gImg("1XYVqcBbmApEDrP8I-Qr8MEg2cQxd5M29"), caption: "Robot Odometry from VR Glasses"  },
       { type: "image", src: gImg("1OBcciAGxEt34xajbI0G-50fYZiM_h7KH"), caption: "VR Headset MQTT Odometry Demo"    },
+      { type: "image", src: "https://developer-blogs.nvidia.com/wp-content/uploads/2022/09/nv-gtc22-fall-social-replicator.png", caption: "Nvidia Omniverse Replicator — Domain Randomization" },
     ],
     viewVideos: [
       {
@@ -74,6 +77,20 @@ const experiences = [
         image:      gImg("1OBcciAGxEt34xajbI0G-50fYZiM_h7KH"),
         videoEmbed: gVid("1a8Kv2oDXYu3nqaSg0Y9QVifi9ajpJG7E"),
         description: "VR headset odometry sent through MQTT protocol demo app inside VR",
+      },
+      {
+        image:      gImg("1OBcciAGxEt34xajbI0G-50fYZiM_h7KH"),
+        videoEmbed: gVid("1uHAC6f-D2sIKN7MoB4tl1g1turbODT0d"),
+        description: "Automating Data Collection Pipeline in Isaac Sim — NAV2 bipedal walking automation for scalable synthetic data collection",
+      },
+      {
+        image:      "https://developer-blogs.nvidia.com/wp-content/uploads/2022/09/nv-gtc22-fall-social-replicator.png",
+        videoEmbed: gVid("1uHAC6f-D2sIKN7MoB4tl1g1turbODT0d"),
+        description: "Nvidia Omniverse Replicator for Domain Randomization — synthetic environment variation for robust AI model training",
+      },
+      {
+        image:      "https://developer-blogs.nvidia.com/wp-content/uploads/2022/09/nv-gtc22-fall-social-replicator.png",
+        description: "Added Lidar sensor to Humanoid simulation in Isaac Sim for enhanced world perception and autonomous navigation",
       },
     ],
   },
@@ -394,5 +411,64 @@ export const hobbiesData = {
   aboutMe:
     "I'm Saumy Sharma — a software engineer who loves making things move, whether that's a robot arm, an AR overlay, or a game character. I get excited about the intersection of simulation, AI, and immersive tech.",
 };
+
+export const achievements = [
+  {
+    title: "CERN Openlab Summer Internship",
+    organization: "CERN, Geneva, Switzerland",
+    date: "July – September 2024",
+    description: "Selected for CERN's prestigious internship programme. Developed Nvidia Omniverse digital twin of the LHCb detector. Designed & presented POC to stakeholders — accepted as official Digital Twins Engine partner.",
+    icon: cern,
+    iconBg: "#1E59AE",
+    link: "https://drive.google.com/file/d/1JkfKWD4E8bgVhedftczw9-gLj_Jn-TtI/view?usp=sharing",
+    linkLabel: "View Report",
+    highlight: true,
+  },
+  {
+    title: "Robotics Software Developer",
+    organization: "Jio Reality Labs, Reliance Industries, Mumbai",
+    date: "May 2025 – Present",
+    description: "Selected for R&D role at India's largest conglomerate (Reliance). Working on humanoid robot simulation, domain randomization, real-world digital twin creation, and teleoperation pipelines for AI training.",
+    icon: "https://imgs.search.brave.com/f7wrVBahPMeIy4Kkuo2cTmRCA-E9H1UH03HFtc6j-lU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIxLzA3/L0ppby1Mb2dvLTUw/MHgzMTQucG5n",
+    iconBg: "#FFFFFF",
+    highlight: true,
+  },
+  {
+    title: "XROS Fellow — META XR Program",
+    organization: "META / Who VR",
+    date: "March – June 2023",
+    description: "Accepted into META's exclusive XROS Fellowship for AR/VR developers. Built production AR applications using ARFoundation and Unity; collaborated on UI design and cloud data integration.",
+    icon: xros,
+    iconBg: "#FFFFFF",
+    link: "https://drive.google.com/file/d/1yKtfTK7QkcFu1-yZd_LtzYhffJgJaUi0/view?usp=sharing",
+    linkLabel: "View Certificate",
+  },
+  {
+    title: "CERN WebFest 2024 Participant",
+    organization: "CERN, Geneva, Switzerland",
+    date: "August 2024",
+    description: "Competed in one of the world's most prestigious science hackathons. Built an AR app using LEGO to visualise quantum optics — photon behaviour, beam splitters, and quantum interference — for school students.",
+    icon: cern,
+    iconBg: "#1E59AE",
+  },
+  {
+    title: "IIT Guwahati Research Internship",
+    organization: "IIT Guwahati (Premier Indian Institute)",
+    date: "June – July 2023",
+    description: "Research internship at one of India's top institutions. Developed an immersive VR jewellery store using Meta Quest 2, conducted user studies with 20+ participants, and reduced VR sickness through optimised interaction design.",
+    icon: iitg,
+    iconBg: "#FFFFFF",
+  },
+  {
+    title: "Published Technical Articles",
+    organization: "Medium",
+    date: "2024",
+    description: "Published robotics engineering articles reaching the global developer community. Topics include ROS2–Unity MQTT integration for robot simulation and AI/robotics research insights.",
+    icon: "https://miro.medium.com/v2/resize:fill:152:152/1*sHhtYhaCe2Uc3IU0IgKwIQ.png",
+    iconBg: "#000000",
+    link: "https://medium.com/@saumysharma007",
+    linkLabel: "Read Articles",
+  },
+];
 
 export { services, technologies, experiences, projects, certifications };

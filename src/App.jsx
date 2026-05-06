@@ -11,6 +11,7 @@ import {
   StarsCanvas,
   ArticlesAndPosts,
   Hobbies,
+  Achievements,
 } from "./components";
 
 /* ── Main one-page portfolio ──────────────────────────────────────── */
@@ -25,6 +26,7 @@ const MainPage = () => (
     <Tech />
     <Works />
     <Certifications />
+    <Achievements />
     <ArticlesAndPosts />
     <div className="relative z-0">
       <Contact />
