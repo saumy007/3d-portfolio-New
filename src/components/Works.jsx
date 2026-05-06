@@ -135,7 +135,7 @@ const Works = () => {
 
       <div className="mt-20 flex flex-wrap gap-7">
         {filteredProjects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <ProjectCard key={project.name} index={index} {...project} />
         ))}
       </div>
     </>

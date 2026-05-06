@@ -60,7 +60,7 @@ const experiences = [
     media: [
       { type: "image", src: gImg("1XYVqcBbmApEDrP8I-Qr8MEg2cQxd5M29"), caption: "Robot Odometry from VR Glasses"  },
       { type: "image", src: gImg("1OBcciAGxEt34xajbI0G-50fYZiM_h7KH"), caption: "VR Headset MQTT Odometry Demo"    },
-      { type: "image", src: "https://developer-blogs.nvidia.com/wp-content/uploads/2022/09/nv-gtc22-fall-social-replicator.png", caption: "Nvidia Omniverse Replicator — Domain Randomization" },
+      { type: "image", src: "https://developer-blogs.nvidia.com/wp-content/uploads/2022/09/nv-gtc22-fall-social-replicator.png", caption: "Nvidia Omniverse Replicator — Domain Randomization", objectFit: "contain" },
     ],
     viewVideos: [
       {
@@ -79,18 +79,22 @@ const experiences = [
         description: "VR headset odometry sent through MQTT protocol demo app inside VR",
       },
       {
+        title:      "Automated Synthetic Data Collection Pipeline",
+        image:      "https://developer-blogs.nvidia.com/wp-content/uploads/2022/09/nv-gtc22-fall-social-replicator.png",
+        videoEmbed: gVid("1uHAC6f-D2sIKN7MoB4tl1g1turbODT0d"),
+        description: "Designed and automated a scalable synthetic data collection pipeline in NVIDIA Isaac Sim using Omniverse Replicator for domain randomization, enabling robust AI training workflows for robotics perception systems.",
+      },
+      {
+        title:      "Autonomous Navigation & Domain Randomization",
+        image:      gImg("1XYVqcBbmApEDrP8I-Qr8MEg2cQxd5M29"),
+        videoEmbed: gVid("1uHAC6f-D2sIKN7MoB4tl1g1turbODT0d"),
+        description: "Implemented autonomous navigation using ROS2 NAV2 and leveraged NVIDIA Omniverse Replicator for domain randomization to improve synthetic dataset diversity and simulation robustness.",
+      },
+      {
+        title:      "LiDAR-based Humanoid Simulation in Isaac Sim",
         image:      gImg("1OBcciAGxEt34xajbI0G-50fYZiM_h7KH"),
         videoEmbed: gVid("1uHAC6f-D2sIKN7MoB4tl1g1turbODT0d"),
-        description: "Automating Data Collection Pipeline in Isaac Sim — NAV2 bipedal walking automation for scalable synthetic data collection",
-      },
-      {
-        image:      "https://developer-blogs.nvidia.com/wp-content/uploads/2022/09/nv-gtc22-fall-social-replicator.png",
-        videoEmbed: gVid("1uHAC6f-D2sIKN7MoB4tl1g1turbODT0d"),
-        description: "Nvidia Omniverse Replicator for Domain Randomization — synthetic environment variation for robust AI model training",
-      },
-      {
-        image:      "https://developer-blogs.nvidia.com/wp-content/uploads/2022/09/nv-gtc22-fall-social-replicator.png",
-        description: "Added Lidar sensor to Humanoid simulation in Isaac Sim for enhanced world perception and autonomous navigation",
+        description: "Integrated LiDAR sensing into humanoid simulations in NVIDIA Isaac Sim to enhance environmental perception and enable smoother locomotion and world understanding.",
       },
     ],
   },
@@ -331,6 +335,7 @@ export const articles = [
     title: "ROS2 to Unity MQTT Connection for Robotic Simulation",
     description:
       "A hands-on walkthrough of bridging ROS2 and Unity via MQTT — covering message setup, real-time odometry streaming from a Realsense Camera, and deployment with Meta Quest 3.",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYN3KYAMnjo5mB5mmu3bMsQahrG6jXG61kpA&s",
     url: "https://medium.com/@saumysharma007/ros2-to-unity-mqtt-connection-for-robotic-simulation-432286549c89",
     platform: "Medium",
     date: "2024",
@@ -341,6 +346,7 @@ export const articles = [
     title: "Robots Learning from YouTube – What People Get Wrong",
     description:
       "Unpacking the myths around imitation learning from video data — what research actually shows, the real challenges of generalisation, and why it's harder than it looks.",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRG37oIkG2AYm0tFalB6_z4iBKPiKTHg26FA&s",
     url: "https://medium.com/@saumysharma007/robots-learning-from-youtube-heres-what-people-get-wrong-d3c64aa2c9c5",
     platform: "Medium",
     date: "2024",

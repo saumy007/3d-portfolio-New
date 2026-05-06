@@ -63,13 +63,19 @@ const WorkHighlightsModal = ({ items, onClose }) => {
             /* ── image gallery ── */
             <div className="space-y-5">
               {items.map((item, i) => (
-                <div key={i} className="rounded-xl overflow-hidden border border-white/5">
+                <div key={i} className="rounded-xl overflow-hidden border border-white/10">
                   {/* thumbnail + play overlay */}
-                  <div className="relative">
+                  <div className="relative bg-[#080615]" style={{ minHeight: "13rem" }}>
                     <img
                       src={item.image}
-                      alt={item.description}
-                      className="w-full h-52 object-cover"
+                      alt={item.title || item.description}
+                      className="w-full"
+                      style={{
+                        display: "block",
+                        maxHeight: "14rem",
+                        objectFit: item.objectFit || "cover",
+                        width: "100%",
+                      }}
                       loading="lazy"
                     />
                     {item.videoEmbed && (
@@ -86,9 +92,12 @@ const WorkHighlightsModal = ({ items, onClose }) => {
                       </button>
                     )}
                   </div>
-                  <p className="px-4 py-3 text-white/80 text-[14px] leading-snug bg-white/[0.03]">
-                    {item.description}
-                  </p>
+                  <div className="px-4 py-3 bg-white/[0.03]">
+                    {item.title && (
+                      <p className="text-purple-300 text-[12px] font-semibold mb-1">{item.title}</p>
+                    )}
+                    <p className="text-white/70 text-[13px] leading-snug">{item.description}</p>
+                  </div>
                 </div>
               ))}
             </div>

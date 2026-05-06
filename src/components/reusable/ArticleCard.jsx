@@ -23,19 +23,22 @@ const ArticleCard = ({
                  flex flex-col"
     >
       {/* Thumbnail */}
-      <div className="relative overflow-hidden h-48">
-        <img
-          src={thumbnail}
-          alt={title}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          loading="lazy"
-        />
-        {/* Medium badge */}
-        <span className="absolute top-3 left-3 bg-black/70 backdrop-blur-sm text-white
-                         text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest">
-          Medium
-        </span>
-      </div>
+      {thumbnail && (
+        <div className="relative overflow-hidden border-b border-purple-900/30"
+             style={{ minHeight: "12rem", background: "#0d0b1e" }}>
+          <img
+            src={thumbnail}
+            alt={title}
+            className="w-full object-contain group-hover:scale-105 transition-transform duration-500"
+            style={{ maxHeight: "14rem", width: "100%", display: "block" }}
+            loading="lazy"
+          />
+          <span className="absolute top-3 left-3 bg-black/70 backdrop-blur-sm text-white
+                           text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest">
+            Medium
+          </span>
+        </div>
+      )}
 
       {/* Body */}
       <div className="flex flex-col flex-1 p-5 gap-3">

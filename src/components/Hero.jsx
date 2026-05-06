@@ -23,7 +23,7 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             
-            Innovative and goal oriented software having diverse experience with AI XR Robotics tech
+            Innovative and passionate Software Engineer &amp; Researcher with diverse experience in AI, Robotics, and XR technologies.
           </p>
         </div>
       </div>
