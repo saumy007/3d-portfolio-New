@@ -130,9 +130,9 @@ const ExperienceFlipCard = ({ experience, index }) => {
       <motion.div
         variants={fadeIn("up", "spring", index * 0.18, 0.7)}
         className="flip-card-scene w-full"
-        style={{ height: 520 }}
+        style={{ height: "clamp(480px, 55vw, 520px)" }}
       >
-        <div className={`flip-card-inner ${flipped ? "is-flipped" : ""}`} style={{ height: 520 }}>
+        <div className={`flip-card-inner ${flipped ? "is-flipped" : ""}`} style={{ height: "clamp(480px, 55vw, 520px)" }}>
 
           {/* ── FRONT ─────────────────────────────────────────────── */}
           <div
