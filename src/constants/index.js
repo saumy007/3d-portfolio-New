@@ -154,7 +154,8 @@ const experiences = [
       "Worked on 6+ Google Apps used in Gurugram, India Google Office.",
       "Integrated Backend with Node.js and Firebase. Deployed apps on AWS and Google Cloud Platform.",
       "Optimized the WebGL and deployed it on server which is used by 10000+ people.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Worked on Google One application used inside the Google Office with a team of developers, using Unity C# as primary tech stack; participating in code reviews and providing constructive feedback improved the application process.",
+      "Worked on-site on the Google OneHub app, optimizing internal tools using Unity3D, WebGL, Firebase, and Node.js.",
     ],
     media: [
       {
@@ -175,7 +176,7 @@ const experiences = [
     points: [
       "Employed ARFoundation to implement augmented reality features in the application using Unity.",
       "Collaborated on the project's User Interface Design using Figma.",
-      "Contributed to improving the application's user experience, making it cleaner and more effective.",
+      "Contributed to Open Source Project and improved the application's user experience, making it cleaner and more effective.",
       "Utilized JSON for cloud integration to enhance data handling and storage.",
     ],
     media: [
@@ -192,7 +193,7 @@ const experiences = [
     iconBg: "#FFFFFF",
     date: "June 2023 - July 2023",
     points: [
-      "Made Jewellery Store in Virtual Reality.",
+      "Made Jewellery Store Experience in Virtual Reality for a Tanishq Store.",
       "Utilized Blender for making 3D models and animations.",
       "Worked on XR All in one SDK by Meta Quest 2 and Unity 3D and reduced VR Sickness.",
       "Conducted user research with 20+ participants and improved the VR experience.",
@@ -359,6 +360,7 @@ export const posts = [
     id: 1,
     description:
       "Sharing my latest work on ROS2 ↔ Unity MQTT integration for robotic odometry at Jio Reality Labs. Real-time sensor data streaming with Meta Quest 3 — the future of robot-digital twin pipelines!",
+    thumbnail: gImg("1Q6OPltg32BjfI6tB4PEn03kqrNy_Kioi"),
     url: "https://www.linkedin.com/feed/update/urn:li:activity:7432498353059500032/",
     platform: "LinkedIn",
     date: "2025",
@@ -367,6 +369,7 @@ export const posts = [
     id: 2,
     description:
       "Building in public — sharing my AR/VR development journey, lessons from working on XR projects with Meta Quest, Unity, and ARFoundation. #BuildInPublic #AR #VR",
+    thumbnail: gImg("14duRl_9LSP7H1vpX-dGWvj5Ww8VTB2RC"),
     url: "https://www.linkedin.com/posts/saumy-sharma_buildinpublic-ar-vr-activity-7298640291509452801-3et0",
     platform: "LinkedIn",
     date: "2025",
@@ -375,6 +378,7 @@ export const posts = [
     id: 3,
     description:
       "Proud to share my Certificate of Completion! Continuing to grow in robotics, simulation, and AI-driven systems. Every cert is one more tool in the toolbox.",
+    thumbnail: gImg("1tyPrqL_EcMym91UvB3RLtlJa4qqdyUo6"),
     url: "https://www.linkedin.com/posts/saumy-sharma_certificate-of-completion-activity-7343279124259426305-jVjl",
     platform: "LinkedIn",
     date: "2025",
