@@ -8,6 +8,7 @@ import {
   Tech,
   Works,
   Certifications,
+  CERNTalk,
   StarsCanvas,
   ArticlesAndPosts,
   Hobbies,
@@ -25,6 +26,7 @@ const MainPage = () => (
     <Experience />
     <Tech />
     <Works />
+    <CERNTalk />
     <Certifications />
     <Achievements />
     <ArticlesAndPosts />

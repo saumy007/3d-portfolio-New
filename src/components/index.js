@@ -10,6 +10,7 @@ import Certifications   from './Certifications';
 import ArticlesAndPosts from './ArticlesAndPosts';
 import Hobbies          from './Hobbies';
 import Achievements     from './Achievements';
+import CERNTalk        from './CERNTalk';
 
 export {
   Hero,
@@ -23,6 +24,7 @@ export {
   ArticlesAndPosts,
   Hobbies,
   Achievements,
+  CERNTalk,
   EarthCanvas,
   BallCanvas,
   ComputersCanvas,

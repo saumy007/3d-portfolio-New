@@ -11,6 +11,7 @@ const ArticleCard = ({
   description,
   thumbnail,
   url,
+  platform = "Medium",
   date,
   readTime,
   index = 0,
@@ -33,9 +34,10 @@ const ArticleCard = ({
             style={{ maxHeight: "14rem", width: "100%", display: "block" }}
             loading="lazy"
           />
-          <span className="absolute top-3 left-3 bg-black/70 backdrop-blur-sm text-white
-                           text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest">
-            Medium
+          <span className={`absolute top-3 left-3 backdrop-blur-sm text-white
+                           text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest
+                           ${platform === "Zenodo" ? "bg-[#1a4fa0]/90" : "bg-black/70"}`}>
+            {platform}
           </span>
         </div>
       )}

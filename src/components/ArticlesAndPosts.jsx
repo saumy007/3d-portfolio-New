@@ -10,8 +10,8 @@ import ArticleCard from "./reusable/ArticleCard";
 import PostCard from "./reusable/PostCard";
 
 const TABS = [
-  { id: "articles", label: "Articles", icon: "✍️" },
-  { id: "posts",    label: "Posts",    icon: "💬" },
+  { id: "articles", label: "Publications", icon: "📄" },
+  { id: "posts",    label: "Posts",        icon: "💬" },
 ];
 
 const ArticlesAndPosts = () => {
@@ -46,7 +46,7 @@ const ArticlesAndPosts = () => {
             initial="hidden"
             animate="show"
             exit={{ opacity: 0, y: 10, transition: { duration: 0.2 } }}
-            className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-7 max-w-4xl mx-auto"
+            className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7"
           >
             {articles.map((article, i) => (
               <ArticleCard key={article.id} {...article} index={i} />

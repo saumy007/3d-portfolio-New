@@ -353,6 +353,17 @@ export const articles = [
     date: "2024",
     readTime: "5 min read",
   },
+  {
+    id: 3,
+    title: "Digital Twin of the LHCb Detector using Nvidia Omniverse",
+    description:
+      "Published research on building a physics-accurate Digital Twin of the LHCb detector at CERN using Nvidia Omniverse. Covers USD-based 3D scene assembly, automated geometry pipeline from CERN's detector database, real-time rendering, and the stakeholder presentation that established Omniverse as CERN's official Digital Twins Engine.",
+    thumbnail: gImg("1yLVBeBbiZ5-AXekg0NzRo76eY7Q7CC38"),
+    url: "https://zenodo.org/records/13888697",
+    platform: "Zenodo",
+    date: "2024",
+    readTime: "Research Paper",
+  },
 ];
 
 export const posts = [
