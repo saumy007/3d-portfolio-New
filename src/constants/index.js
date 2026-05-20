@@ -120,7 +120,7 @@ const experiences = [
       { type: "image", src: gImg("1nIc6lWw6GH3K5HLCZYMxtMMGLGRFQWv-"), caption: "LHCb Digital Twin in Omniverse" },
       { type: "image", src: gImg("1am0K3zgvPu-39b8YAL-c021Y8Ky7g7LV"), caption: "CERN Internship Certificate"     },
     ],
-    reportUrl: "https://drive.google.com/file/d/1JkfKWD4E8bgVhedftczw9-gLj_Jn-TtI/view?usp=sharing",
+    reportUrl: "https://zenodo.org/records/13888697",
   },
 
   // ── CERN WebFest Hackathon ────────────────────────────────────────
@@ -441,7 +441,7 @@ export const achievements = [
     description: "Selected for CERN's prestigious internship programme. Developed Nvidia Omniverse digital twin of the LHCb detector. Designed & presented POC to stakeholders — accepted as official Digital Twins Engine partner.",
     icon: cern,
     iconBg: "#1E59AE",
-    link: "https://drive.google.com/file/d/1JkfKWD4E8bgVhedftczw9-gLj_Jn-TtI/view?usp=sharing",
+    link: "https://zenodo.org/records/13888697",
     linkLabel: "View Report",
     highlight: true,
   },
