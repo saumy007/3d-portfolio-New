@@ -11,7 +11,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Gaming_chair(props) {
-  const { nodes, materials } = useGLTF('./gaming_chair.glb')
+  const { nodes, materials } = useGLTF(`${import.meta.env.BASE_URL}gaming_chair.glb`)
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.adjustment_aiStandardSurface1_0.geometry} material={materials.aiStandardSurface1} />
@@ -40,4 +40,4 @@ export function Gaming_chair(props) {
   )
 }
 
-useGLTF.preload('/gaming_chair.glb')
+useGLTF.preload(`${import.meta.env.BASE_URL}gaming_chair.glb`)
