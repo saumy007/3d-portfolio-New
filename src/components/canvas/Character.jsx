@@ -6,7 +6,7 @@ import { SkeletonUtils } from 'three-stdlib'
 
 export function Character(props) {
   const group = React.useRef()
-  const { scene, animations } = useGLTF('/character.glb')
+  const { scene, animations } = useGLTF(`${import.meta.env.BASE_URL}character.glb`)
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
   const { nodes, materials } = useGraph(clone)
   const { actions } = useAnimations(animations, group)
@@ -84,4 +84,4 @@ export function Character(props) {
   )
 }
 
-useGLTF.preload('/character.glb')
+useGLTF.preload(`${import.meta.env.BASE_URL}character.glb`)
