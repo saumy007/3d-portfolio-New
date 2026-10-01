@@ -53,7 +53,7 @@
  import * as THREE from "three";
 
 export function Avatar(props) {
-  const { nodes, materials } = useGLTF("/tanmayChar.glb");
+  const { nodes, materials } = useGLTF(`${import.meta.env.BASE_URL}tanmayChar.glb`);
 
   const gr = useRef();
   const { animations: typingAnimation } = useFBX("./animation/Typing.fbx");
@@ -141,4 +141,4 @@ export function Avatar(props) {
   );
 }
 
-useGLTF.preload("/tanmayChar.glb");
+useGLTF.preload(`${import.meta.env.BASE_URL}tanmayChar.glb`);

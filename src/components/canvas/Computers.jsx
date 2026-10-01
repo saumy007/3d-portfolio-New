@@ -6,7 +6,7 @@ import { Avatar } from "./TanmayChar";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  const computer = useGLTF(`${import.meta.env.BASE_URL}desktop_pc/scene.gltf`);
   
 
   return (
