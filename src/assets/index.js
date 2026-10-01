@@ -53,6 +53,7 @@ import robotOdometry from "./rotot_odometry.jpeg";
 import coursera from "./coursera.jpeg";
 import mathworks from "./mathworks.jpeg";
 import nptel from "./nptel.jpeg";
+import awsAiPractitioner from "./aws_ai_practitioner.png";
 
 // ── New assets (replace placeholders with real files in src/assets/) ──
 import digitalTwin   from "./Digital_twin.jpeg";
@@ -79,7 +80,7 @@ export {
   cern, xros, iitg, smollan,
   carrent, jobit, tripguide, beyblade, predictive, vr,
   apple, nvidia, mujoco, robotOdometry,
-  coursera, mathworks, nptel,
+  coursera, mathworks, nptel, awsAiPractitioner,
   digitalTwin, robotOdom, vrOdom,
   certificate, cernWork, cernHackathon, cernEvent,
   vendingMachine, xrosFellow, dodIit, saumyIit,

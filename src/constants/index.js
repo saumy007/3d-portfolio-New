@@ -3,7 +3,7 @@ import {
   javascript, beyblade, vr,
   reactjs, redux, tailwind, nodejs, mongodb, git, figma,
   docker, threejs, nvidia, mujoco, robotOdometry,
-  coursera, mathworks, nptel,
+  coursera, mathworks, nptel, awsAiPractitioner,
   cern, xros, iitg, smollan, predictive,
   dynamicPainter, cernEvent,
 } from "../assets";
@@ -304,6 +304,14 @@ const projects = [
 ];
 
 const certifications = [
+  {
+    title: "AWS Certified AI Practitioner",
+    issuer: "Amazon Web Services",
+    date: "2026",
+    credentialUrl: "https://www.credly.com/badges/5409d4bd-b670-49bf-ab1e-13bf32d39a70",
+    skills: ["Generative AI", "Amazon Bedrock", "Machine Learning", "Responsible AI"],
+    logo: awsAiPractitioner,
+  },
   {
     title: "Supervised Machine Learning: Regression and Classification",
     issuer: "DeepLearning.AI",
